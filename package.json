@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "start": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "start:dev": "nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adrian Trujillo",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.16.3",
+    "prisma": "^4.13.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@prisma/client": "4.13.0"
   }
 }
